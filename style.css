@@ -8,6 +8,9 @@ body{
     background-size: cover;
     color: white;
 }
+hr{
+    color: rgb(163, 50, 243);
+}
 nav div.logo{
     display: flex;
     width: 300px;
@@ -40,6 +43,9 @@ nav div.menu ul{
     gap: 70px;
     font-size: 20pt;
     align-items: center; 
+}
+nav div.menu li:hover{
+    scale: 1.2;
 }
 nav .menu ul a {
     color: rebeccapurple;
@@ -77,6 +83,7 @@ div.presentation{
     margin: 50px;
     justify-content: space-around;
     padding-top: 150px;
+    padding-bottom: 200px;
 }
 div.nom{
     width: 50%;
@@ -99,6 +106,7 @@ button{
 }
 section.projet{
     padding-top: 100px;
+    padding-bottom: 150px;
 }
 section.projet h1{
     color:brown ;
@@ -120,7 +128,7 @@ div.projet_container{
 }
 div.projet_container div.card_projet{
     width: 400px;
-    border: 1px solid brown;
+    border: 1px solid rgb(165, 42, 155);
     border-radius: 20px;
 }
 div.projet_container p{
@@ -167,33 +175,72 @@ div.flA1 img{
 }
 div.flA2{
     display: flex;
-    border: 1px solid red;
+    border: 1px solid rgb(255, 0, 255);
     border-radius: 20px;
 }
 div.flA2 img{
     height: 300px;
     width: 300px;
 }
+div.flA3{
+    border: 1px solid  rgb(255, 0, 255);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+div.flA3 h2{
+    font-style: italic;
+    font-size: 25pt;
+    text-decoration: underline;
+    color: rgb(0, 179, 255);
+}
+div.flA3 div{
+    margin: auto;
+    margin-left: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+div.flA3 h3{
+    font-size: 18pt;
+}
+div.flA3 p{
+    margin-left: 30px;
+    font-style: italic;
+    font-size: 15pt;
+}
 main.Parcours{
-    padding-top: 100px;
-      width: 80%;
+    padding-top: 170px;
+    width: 80%;
     margin: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: center;
     text-align: center;
 }
-main.Parcours h1{
+main.Parcours legend{
     color:brown ;
-    text-align: center;
     font-size: 30pt;
     text-decoration: underline;
+}
+main.Parcours div.pA{
+    margin-bottom: 100px;
+    display: flex;
+    width: 60% 40%;
+    gap: 90px;
+    margin: 150px;
+}
+main.Parcours div.pA1{
+    border: 1px solid rgb(204, 71, 230);
+    border-radius: 30px;
+}
+main.Parcours div.pA2{
+      border: 1px solid rgb(204, 71, 230);
+    border-radius: 30px;
+    margin: 15px;
 }
 footer{
     font-size: 15pt;
     margin: auto;
-     padding-top: 100px;
+     padding-top:100px;
 }
-
 div.bas_page{
     padding-top: 100px;
     width: 80%;
@@ -208,12 +255,12 @@ div.bas_page h1{
 }
 div.bp{
     display: flex;
-    border: 1px solid brown;
+    border: 1px solid rgb(138, 0, 224);
     border-radius: 20px;
     gap: 200px;
     background: rgba(91, 14, 0, 0.085);
     width: fit-content;
-    padding: 20px;
+    padding: 30px;
     margin: auto;
 }
 div.bp div{
@@ -257,8 +304,7 @@ div.Localisation{
     margin-top: 100px;
     border: 0.5px solid rebeccapurple;
     border-radius: 20px;
-    padding:80px
-    
+    padding:100px
 }
 div.Localisation h2{
     text-decoration: underline;
@@ -266,7 +312,7 @@ div.Localisation h2{
 }
 div.Localisation img{
     height: 300px;
-    width: 600px;
+    width: 400px;
     border-radius: 20px;
 }
 
