@@ -45,16 +45,34 @@ nav div.menu ul{
     align-items: center; 
 }
 nav div.menu li:hover{
-    scale: 1.2;
+    scale: 1;
 }
 nav .menu ul a {
     color: rebeccapurple;
     text-decoration: none;
 }
+nav .menu ul li a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    background-color: rgb(126, 12, 57) ;
+    width: 0;
+    border-radius: 3px;
+    transition: width 0.3s ease, left 0.3s ease ;
+}
+nav .menu ul li a:hover{
+    color:rgb(126, 12, 57);
+}
+nav .menu ul li a:hover::after{
+    width: 100%;
+    left: 0;
+    height: 3px;
+}
 li#style_contact{
     padding: 10px;
     border-radius: 15px;
-    background: rgb(126, 12, 57);
+    background:cc;
     color: rgb(212, 203, 203);
 }
 li#style_contact a{
@@ -63,6 +81,18 @@ li#style_contact a{
 div.nom h1{
     font-size: 35pt;
      color: rgb(126, 12, 57);
+     animation: slideH1 3s ;
+}
+@keyframes slideH1 {
+    from{
+      opacity: 0;
+      transform: translateX(-60px)
+    }
+    to{
+     opacity: 1;
+     transform: translateX(0);
+    }
+    
 }
 h6{
     font-size: 30pt;
@@ -72,6 +102,20 @@ div.nom p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15pt;
     text-align: justify;
+    animation: slideP 8s ease forwards;
+}
+@keyframes slideP {
+    from{
+          opacity: 0;
+      transform: translateY(-60px)
+    }
+    to{
+     opacity: 1;
+     transform: translateY(0);
+    }
+}
+div.nom p:focus-visible{
+    animation: slideP 8s ease forwards;
 }
 div.container{
     width: 80%;
@@ -94,6 +138,7 @@ div.presentation img{
     border: 1px solid  rgb(126, 12, 57);
     border-radius: 250px;
     box-shadow: 4px 4px 0 0 gray ;
+    object-fit: cover;
 }
 button{
     padding: 10px 20px;
@@ -198,6 +243,7 @@ div.flA3 div{
     margin-left: 40px;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 div.flA3 h3{
     font-size: 18pt;
@@ -223,18 +269,21 @@ main.Parcours legend{
 main.Parcours div.pA{
     margin-bottom: 100px;
     display: flex;
-    width: 60% 40%;
     gap: 90px;
-    margin: 150px;
+    padding: 60px;
 }
 main.Parcours div.pA1{
     border: 1px solid rgb(204, 71, 230);
     border-radius: 30px;
+    text-align: left;
+    padding: 10px;
 }
 main.Parcours div.pA2{
-      border: 1px solid rgb(204, 71, 230);
+    border: 1px solid rgb(204, 71, 230);
     border-radius: 30px;
     margin: 15px;
+    text-align: left;
+    padding: 15px;
 }
 footer{
     font-size: 15pt;
