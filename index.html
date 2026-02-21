@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,7 @@
           <ul>
             <li><a href="#Accueil">Accueil</a></li>
             <li><a href="#Projet">Projet</a></li>
-            <li><a href="#Competences">Competences</a></li>
+            <li><a href="#Competences">Compétences</a></li>
             <li><a href="#Parcours">Parcours</a></li>
             <li id="style_contact"><a href="#Contact">Contact</a></li>
           </ul>
@@ -35,22 +35,31 @@
         <div class="nom">
           <h1>Bonjour,mon nom est RAMANIRISOA Nirilala Antonio.</h1>
           <p>
-            Etudiant de l'universite d'Ecole de Management et d'Inovation
+            Etudiant de l'université d'Ecole de Management et d'Inovation
             Technologie de FIANARANTSOA dans la cadre de l'informatique.
           </p>
           <p>
             Ce portfolio rassemble mes premier projet en informatique,réalisés
             dans le cadre de ma formation et de mon apprentissage personnel.
-            <br />En tant qu'étudiant debutant en informatique, je construis
+            <br />En tant qu'étudiant débutant en informatique, je construis
             progressivement mes competences.Vous trouverer ici quelque projet
             qui illustre ma motivation. <br />
             Afin que tous cela soit possible,vous pouver me confier des taches
-            equivaut a ma connaissance pour mieux colaborer a l'avenir.
+            équivaut à ma connaissance pour mieux colaborer à l'avenir.
           </p>
-          <button>Contacter moi</button>
+          <button>
+            <a id="style_contact" href="#Contact"></a>Contacter moi
+          </button>
         </div>
         <div>
           <img src="./Image/Antonio.jpg" alt="Photo d'identiter" />
+          <div class="nom2">
+            <ul>
+              <li><strong>OpenWork:</strong>Récement</li>
+              <li><strong>Freelance:</strong>Disponible</li>
+              <li><strong>Adresse actuel:</strong>Fianarantsoa</li>
+            </ul>
+          </div>
         </div>
       </div>
       <hr />
@@ -63,42 +72,56 @@
         <div class="projet_container">
           <div class="card_projet">
             <div>
-              <img src="./Image/img_fond1.avif" alt="Image de projet" />
+              <img src="./Image/img_fond1.avif" alt="Image de projet1" />
             </div>
             <div>
               <p>Developpement web</p>
               <h3>Projet 1</h3>
               <p>
                 C'est un projet individuel dans ma formation actuel.Ce projet se
-                base au cadre de creation du PORTFOLIO etudiant.
+                base au cadre de creation du PORTFOLIO étudiant.
               </p>
-              <div class="button"><button>decouvrir</button></div>
+              <div class="button">
+                <a href="">
+                  <button type="submit" id="btn_submit">découvrir</button></a
+                >
+              </div>
             </div>
           </div>
           <div class="card_projet">
-            <div><img src="./Image/img_fond2.avif" alt="" /></div>
+            <div>
+              <img src="./Image/img_fond2.avif" alt="Image de projet2" />
+            </div>
             <div>
               <p>Developpement web</p>
               <h3>Projet 2</h3>
               <p>
                 C'est un projet de collaboration avec plusieurs colleges.Ce
-                projet est dans la creation d'un site web en contribuant chaque
-                collaborateur a ajoute son propre code.
+                projet est dans la création d'une site web en contribuant chaque
+                collaborateur a ajoute son propre code qui sera assemblée en une
+                seule branche.
               </p>
-              <div class="button"><button>decouvrir</button></div>
+              <div class="button">
+                <a href="Https://github.com/Andria-m16/Emit-Cook.git"
+                  ><button>découvrir</button></a
+                >
+              </div>
             </div>
           </div>
           <div class="card_projet">
-            <div><img src="./Image/1.webp" alt="" /></div>
+            <div><img src="./Image/1.webp" alt="Image de projet3" /></div>
             <div>
               <p>Developpement web</p>
               <h3>Projet 3</h3>
               <p>
                 C'est un projet personnel qui n'inclue pas ma cadre de
                 formation.C'est un projte qui se base sur le disinge d'une site
-                web qui necessites des formulaires a completer.
+                web qui necessites des formulaires a completer.C'est une form
+                basique non titré.
               </p>
-              <div class="button"><button>decouvrir</button></div>
+              <div class="button">
+                <a href=""> <button>découvrir</button></a>
+              </div>
             </div>
           </div>
         </div>
@@ -106,50 +129,55 @@
     </div>
     <br />
     <section class="Competences" id="Competences">
-      <h1>Competences:</h1>
+      <h1>Compétences:</h1>
       <div class="flA">
+        <p>Language maitriser:</p>
         <div class="flA1">
           <img src="./Image/html_logo.avif" alt="Logo HTML" />
-          <div>
+          <div style="display: block; width: 80%">
             <h2>HTML</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Assumenda placeat corrupti, mollitia illo ut quaerat, neque iure
-              excepturi voluptas reiciendis ab numquam nihil rerum deserunt id
-              labore quidem ipsam tempora?
-            </p>
+            <div class="range">
+              <span class="range-style"></span>
+            </div>
           </div>
         </div>
         <br />
         <div class="flA2">
           <img src="./Image/css_logo.jpg" alt="Logo CSS" />
-          <div>
+          <div style="display: block; width: 80%">
             <h2>CSS</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Excepturi dolores, quasi modi asperiores nemo odit aut debitis
-              saepe esse, voluptatum necessitatibus quod architecto beatae
-              earum! Repellat architecto perspiciatis odio deleniti!
-            </p>
+            <div class="range2">
+              <span class="range-style"></span>
+            </div>
           </div>
         </div>
+        <p>Outils maitriser:</p>
         <div class="flA3">
+          <ul>
+            <li>Visual Studio Code</li>
+            <li>github</li>
+            <li>Git</li>
+            <li>Microsoft:Worde,Exel,Power Point</li>
+            <li>Microsoft:Acces</li>
+          </ul>
+        </div>
+        <div class="flA4">
           <h2>Langues<i class="fa-solid fa-language"></i></h2>
           <div>
-            <h3> <i class="fa-solid fa-arrow-right"></i>Malagasy:</h3>
+            <h3><i class="fa-solid fa-arrow-right"></i>Malagasy:</h3>
             <p>Langue maternelle</p>
           </div>
           <div>
-            <h3> <i class="fa-solid fa-arrow-right"></i>Francais:</h3>
-            <p>Dexieme langue qui peut etre paler courament</p>
+            <h3><i class="fa-solid fa-arrow-right"></i>Francais:</h3>
+            <p>Deuxième langue qui peut etre paler courament</p>
           </div>
           <div>
-            <h3> <i class="fa-solid fa-arrow-right"></i>Anglais:</h3>
-            <p>Niveaux intermediaire en terme de parler et écrit</p>
+            <h3><i class="fa-solid fa-arrow-right"></i>Anglais:</h3>
+            <p>Niveaux intèrmediaire en terme de parler et écrit</p>
           </div>
           <div>
-            <h3> <i class="fa-solid fa-arrow-right"></i>Allemand:</h3>
-            <p>Niveaux A2 avec test écrit</p>
+            <h3><i class="fa-solid fa-arrow-right"></i>Allemand:</h3>
+            <p>Niveaux A2 de test écrit</p>
           </div>
         </div>
       </div>
@@ -163,9 +191,10 @@
             <hr />
             <p>
               Avant de décrir le déroulement le cheminement au
-              postuniversitaires,nous allons voir le postsecondaire. Etudiant du
-              lycée Saint Chantal,Antananarivo,soanierana du début jusqu'au
-              terminal:voici une petite resume du parcours academique: <br />
+              postuniversitaires,nous allons voir le postsecondaire. Etudiant
+              d'une école catholique, lycée Saint
+              Chantal,Antananarivo,soanierana du début jusqu'au terminal:voici
+              une petite resume du parcours academique: <br />
 
               <i class="fa-solid fa-arrow-right"></i>L'année 2025:
               <strong>Bac Scientifique série D</strong>,mention assez bien
@@ -177,22 +206,32 @@
             </p>
           </div>
           <div class="pA2">
-            <h2>Centre d'interet</h2>
+            <h2>Centre d'intérèt</h2>
             <hr />
             <ul>
               <li>
-                Entrepreunatiat <i class="fa-solid fa-hand-holding-dollar"></i>
+                <i class="fa-solid fa-hand-holding-dollar"></i> Entrepreunatiat
               </li>
-              <li>Busnesses <i class="fa-solid fa-business-time"></i></li>
-              <li>Lecture <i class="fa-solid fa-book"></i></li>
-              <li>Musique <i class="fa-brands fa-itunes-note"></i></li>
-              <li>Jeu vidéo <i class="fa-solid fa-gamepad"></i></li>
+              <li><i class="fa-solid fa-business-time"></i>Busnesses</li>
+              <li><i class="fa-solid fa-book"></i>Lecture</li>
+              <li><i class="fa-brands fa-itunes-note"></i>Musique</li>
+              <li><i class="fa-solid fa-gamepad"></i>Jeu vidéo</li>
             </ul>
             <p>
-              Il y a aussi la conduit automobile puisque mon permis AB ont été
-              obtenue le 11/10/2025
+              Il y a aussi la conduit automobile, permis AB obtenue le
+              11/10/2025
             </p>
           </div>
+        </div>
+        <div class="pA3">
+          <h2>Parcours universitaires</h2>
+          <p>
+            Etudie actuelement chez EMIT FIANARANTSOA dans la cadre de
+            l'informatique et technologique
+          </p>
+          <ul>
+            <li>L1 Développement d'Application Internet et Intranet(DA2I)</li>
+          </ul>
         </div>
       </fieldset>
     </main>
@@ -204,32 +243,37 @@
           <div class="bp1">
             <ul>
               <li>
-                <a href=""></a>
-                <i class="fa-brands fa-facebook"></i>
-                <div class="bp1a">Ramanirisoa Nirilala Antonio</div>
+                <a href="https://www.facebook.com/tony.ramanirisoa">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
               </li>
-              <br />
               <li>
-                <a href=""></a>
-                <i class="fa-brands fa-linkedin"></i>
-                <div class="bp1a">Nirilala Antonio Ramanirisoa</div>
+                <a
+                  href="https://www.linkedin.com/in/nirilala-antonio-ramanirisoa-1b03a4356/"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
               </li>
-              <br />
               <li>
-                <i class="fa-brands fa-github"></i>
-                <div>Antonio-tech</div>
+                <a href="https://github.com/dashboard">
+                  <i class="fa-brands fa-github"></i>
+                </a>
               </li>
-              <br />
+              <li>
+                <a href="https://wa.me/328558630">
+                  <i class="fa-brands fa-square-whatsapp"></i>
+                </a>
+              </li>
               <li>
                 <a href="mailto:tonyramanirisoa@gmail.com"
                   ><i class="fa-solid fa-envelope"></i>
-                  <div>tonyramanirisoa@gmail.com</div></a
-                >
+                </a>
               </li>
             </ul>
           </div>
           <form class="bp2">
-            <div>
+            <div class="bp2A">
+              <h3>Laissez-nous vos information:</h3>
               <label for="">Noms:</label>
               <input type="text" placeholder="Votre noms complet" />
             </div>
@@ -245,7 +289,7 @@
               <label for="">Message</label>
               <textarea
                 name="text"
-                placeholder="Votre messaga"
+                placeholder="Ecrit votre message ici "
                 cols="30px"
                 rows="8px"
                 id=""
@@ -259,17 +303,37 @@
         </div>
 
         <div class="Localisation">
-          <div>
-            <h2>
-              <i class="fa-solid fa-location-crosshairs"></i>Localisation:
-            </h2>
-            <p>
-              <i class="fa-solid fa-arrow-right"></i>FIANARANTSOA:
-              Emit,Andrainjato
-            </p>
+          <div class="Loca001">
+            <div class="L1">
+              <span><i class="fa-solid fa-house-user"></i></span>
+              <h2>Pays:</h2>
+              <p>Madagascar</p>
+              <h2>Ville:</h2>
+              <p>Fianarantsoa</p>
+              <h2>Adresse:</h2>
+              <p>Andrainjato</p>
+            </div>
+            <div class="L2">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <h2>Telma:</h2>
+              <p>034 94 966 64</p>
+              <h2>Orange:</h2>
+              <p>032 85 586 30</p>
+            </div>
           </div>
-          <div>
-            <img src="./Image/Map Emit.png" alt="Map Andrainjato" />
+          <div class="L3">
+            <div>
+              <h2>
+                <i class="fa-solid fa-location-crosshairs"></i>Localisation:
+              </h2>
+              <p>
+                <i class="fa-solid fa-arrow-right"></i>FIANARANTSOA:
+                Emit,Andrainjato
+              </p>
+            </div>
+            <div>
+              <img src="./Image/Map Emit.png" alt="Map Andrainjato" />
+            </div>
           </div>
         </div>
       </div>
