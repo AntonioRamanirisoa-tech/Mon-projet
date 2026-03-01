@@ -4,7 +4,8 @@ head .img{
 
 }
 body{
-    background-color:whitesmoke;
+    background: linear-gradient(to right,whitesmoke,wheat);
+    /* background-color:whitesmoke; */
     background-size: cover;
     color: rgb(0, 0, 0);
 }
@@ -40,6 +41,7 @@ nav div.logo .badge {
     border-radius: 50px;   
 }
 nav div.menu ul{
+    width: 80%;
     display: flex;
     list-style: none;
     gap: 70px;
@@ -131,9 +133,14 @@ div.presentation{
     padding-top: 150px;
     padding-bottom: 200px;
     gap: 25px;
+    background: url(./Hi-tech\ neon\ HUD\ user\ interface\ animation-\ Kritrimvault.mp4);
 }
 div.nom{
     width: 50%;
+}
+div.nom a{
+    text-decoration: none;
+    color: white;
 }
 div.nom2{
     justify-content: center;
@@ -197,6 +204,7 @@ div.projet_container div.card_projet{
     width: 400px;
     border: 1px solid orange;
     border-radius: 20px;
+    background-color: white;
 }
 div.projet_container p{
     padding: 15px;
@@ -224,8 +232,9 @@ div.flA{
 }
 div.flA p{
     font-style: italic;
-    font-size: 20pt;
+    font-size: 25pt;
     text-align: left;
+    color: rgb(102, 84, 12);
 }
 div.flA img{
     border-radius: 20px;
@@ -281,6 +290,12 @@ div.flA3{
     text-align: left;
     border-radius: 0 0 30px 30px;
     background-color: white;
+}
+div.flA3 p{
+    font-style: italic;
+    color: rgb(102, 84, 12);
+    text-align: start;
+    font-size: 15pt;
 }
 div.flA4{
     border: 1px solid  orange;
@@ -418,10 +433,11 @@ form.bp2 div{
 form.bp2 input{
     width: 500px;
     height: 30px;
-    border: 1px;
-    border-radius: 5px;
+    border-right: black;
+    border-top: black;
+    border-radius: 0 10px 0 0 ;
     outline: none;
-    background-color: whitesmoke;
+    background-color: white;
 }
 form.bp2 div.bp2A{
     display: flex;
@@ -431,13 +447,19 @@ form.bp2 .btn_action{
     flex-direction:row-reverse;
     justify-content: end;
 }
+form.bp2 .btn_action a{
+    text-decoration: none;
+    color: white;
+}
 textarea{
-    border: none;
-    border-radius: 20px;
-    background-color: whitesmoke;
+    border-top: black;
+    border-right: black;
+    border-radius: 0 20px 0 0;
+    background-color: white;
 }
 textarea,placeholder{
     padding: 10px;
+    /* position: fixed; */
 }
 div.Localisation{
     justify-content: space-between;
@@ -458,7 +480,6 @@ div.Localisation img{
     width: 400px;
     border-radius: 20px;
 }
-
 div.Loca001{
     display: flex;
     justify-content: space-between;
@@ -475,7 +496,6 @@ div.L1 i{
     font-size: 50pt;
     color: orange;
     margin-left: 200px;
-    
 }
 div.L2{
     /* border: 0.5px solid orange; */
@@ -497,13 +517,6 @@ div.L3{
     background-color: white;
     margin-top: 50px;
 }
-
-
-
-
-
-
-
 
 
 
@@ -585,7 +598,7 @@ div.L3{
     }
     main.Parcours{
         width: 100vw;
-        font-size: 40pt;
+        font-size: 20pt;
     }
     main.Parcours fieldset{
         width: 90%;
@@ -617,10 +630,12 @@ div.L3{
         justify-content: center;
         align-items: center;
     }
-
-
-
-
-
-
+}
+@media  (max-width: 1350px) {
+    nav{
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
